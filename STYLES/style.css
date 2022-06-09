@@ -1,0 +1,137 @@
+/*-------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #000;
+  background-image: url(/ASSETS/blur-1.png), url(/ASSETS/blur-2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+body header .menu-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 15vh;
+  padding: 4vh 15vw;
+}
+body header .menu-desktop ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+body header .menu-desktop ul li {
+  margin: 10px;
+}
+body header .menu-desktop ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+body header .menu-desktop input[type=button] {
+  height: 3rem;
+  width: 13rem;
+  color: #fff;
+  background-color: transparent;
+  border-color: #8257e5;
+  box-shadow: 0 0 1em #8257e5;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+}
+body header .menu-mobile {
+  display: none;
+}
+body .content {
+  display: none;
+}
+body .content h1 {
+  color: #fff;
+}
+body main {
+  position: relative;
+  display: flex;
+  height: 85vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .content-text h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+}
+body main .content-text #title-shadow {
+  color: #000;
+  text-align: center;
+  font-size: 4rem;
+  text-shadow: 5px 0px #8257e5;
+}
+body main img {
+  position: absolute;
+  bottom: 0;
+  height: 60vh;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    height: 100vh;
+    background-image: url(/ASSETS/blur-mobile.png);
+  }
+  body header .menu-desktop {
+    display: none;
+  }
+  body header .menu-mobile {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    width: 100%;
+    height: 6vh;
+    padding: 10px;
+  }
+  body header .menu-mobile input[type=button] {
+    background-image: url(/ASSETS/menu-buguer-open.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    border-style: none;
+    width: 2rem;
+  }
+  body header .menu-mobile #mobile-menu {
+    display: none;
+  }
+  body .content {
+    display: flex;
+    text-align: center;
+    height: 20vh;
+    padding: 5vh 2vw;
+  }
+  body .content h1 {
+    font-size: 1.5rem;
+  }
+  body main {
+    display: flex;
+    height: 74vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body main .content-text h1 {
+    font-size: 3rem;
+  }
+  body main .content-text #title-shadow {
+    font-size: 3rem;
+  }
+  body main img {
+    position: static;
+    height: 30vh;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
